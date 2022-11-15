@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F15B5B"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:text="@string/label_input_name" />
+
+    <EditText
+        android:id="@+id/editTextTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+
+        android:text="@string/label_input_postal_code" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextTextPostalCode1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.2"
+            android:padding="10dp"
+            android:text="@string/label_input_postal_code_hyphen"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextTextPostalCode2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="number"
+
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+
+        android:text="@string/label_input_phone_number" />
+
+    <EditText
+        android:id="@+id/editTextTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="phone"
+
+        android:padding="10dp" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupOs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/RadioButtonClass001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:padding="10dp"
+
+            android:text="@string/label_radio_class_001" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonClass002"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:padding="10dp"
+
+            android:text="@string/label_radio_class_002" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonClass003"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:padding="10dp"
+
+            android:text="@string/label_radio_class_003" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerLikeFood"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:entries="@array/label_like_food_items"
+        android:padding="10dp"
+
+
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_button_send" />
+
+    <ListView
+        android:id="@+id/listViewRecommended"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:entries="@array/label_recommended" />
+
+
+</LinearLayout>

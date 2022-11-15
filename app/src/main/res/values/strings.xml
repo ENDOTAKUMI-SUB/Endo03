@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">3章課題：K020C1094</string>
+    <string name="label_input_name">お名前を入力してください</string>
+    <string name="label_input_postal_code">郵便番号を入力してください</string>
+    <string name="label_input_postal_code_hyphen">➖</string>
+    <string name="label_input_phone_number">電話番号を入力してください</string>
+    <string name="label_radio_class_001">1組</string>
+    <string name="label_radio_class_002">2組</string>
+    <string name="label_radio_class_003">3組</string>
+    <string name="label_like_food">好きな食べ物</string>
+    <string-array name="label_like_food_items">
+        <item>好きな食べ物</item>
+        <item>ご飯</item>
+        <item>カレー</item>
+        <item>ラーメン</item>
+        <item>チーズ</item>
+        <item>ピザ</item>
+    </string-array>
+    <string name="label_button_send">送信</string>
+    <string-array name="label_recommended">
+        <item>Android</item>
+        <item>Kotlin</item>
+        <item>JetpackCompose</item>
+        <item>DroidKaigi</item>
+        <item>PHPerKaigi</item>
+        <item>KotlinFest</item>
+        <item>Twitter</item>
+        <item>ドン・キホーテ</item>
+        <item>日本工学院</item>
+        <item>大田区</item>
+    </string-array>
+</resources>
